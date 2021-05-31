@@ -1,149 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Plaza Solaz</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Plaza Solaz</title>
+
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        crossorigin="anonymous"></script>
+</head>
 
-<body class="body">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Desplegable
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./screen/learnDiv.html">Aprende DIV</a></li>
-                  <li><a class="dropdown-item" href="./screen/learnBootstrap.html">Aprende Bootstrap</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#home"><img class="img-fluid bg-transparent" width="50" height="50"
+                src="./assets/img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./screen/learnDiv.html">Aprende Div</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./screen/learnBootstrap.html">Aprende Bootstrap</a>
+                </li>
+
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <header id="header">
-        <h1> Bienvenido Plaza Solaz </h1>
-    </header>
-    
+            <ul class="navbar-nav">
+                <li>
+                    <img class="border border-danger rounded-circle" height="40" width="40"
+                        src="./assets/img/perfil.png">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info">Erick Mireles Merchant</a>
+                </li>
+            </ul>
 
-    <nav>
-        <a href="#home" target="_blank">Inicio</a>
-        <a href="#about">Acerca de nosotros</a>
-        <a href="#contact">Contactanos</a>
-        <a href="./screen/learnDiv.html" target="_blank"> Aprende Div </a>
-        <a href="./screen/learnBootstrap.html">Aprende Bootstrap </a>
+        </div>
     </nav>
-  <div class="shadow p-3 mb-5 bg-body rounded"
-    <section id="home" class="text-success">
+    <section id="home">
         <article>
-            <h2>Inicio</h2>
-            <hr />
-            <figure>
-                <img src="./assets/img/plazaVista.jpg" height="200" width="300" />
-            </figure>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img height="500" src="https://www.travelweekly.com/uploadedImages/All_TW_Art/2018/0305/T0305SOLAZRENDERING_HR.jpg?width=1540&height=866&mode=crop&Anchor=MiddleCenter" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img height="500" src="https://www.travelweekly.com/uploadedImages/All_TW_Art/2018/0305/T0305SOLAZRENDERING_HR.jpg?width=1540&height=866&mode=crop&Anchor=MiddleCenter" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img height="500" src="https://www.travelweekly.com/uploadedImages/All_TW_Art/2018/0305/T0305SOLAZRENDERING_HR.jpg?width=1540&height=866&mode=crop&Anchor=MiddleCenter" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img height="500" src="https://lugarte.com/wp-content/uploads/2014/12/Untitled-11.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Siguiente</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+
         </article>
     </section>
-    <hr />
-  </div>
+    <hr>
     <section id="about">
         <article>
-          <div class="card text-center">
-            <div class="card-header">
-              Acerca de Nosotros
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Nuestras Tiendas</h5>
-              <div class="row">
-                <div class="col-12 col-sm-6 col-md-4">
-                  <img style="height: 168px; width: 169px;" class="img-fluid img-thumbnail" src="./assets/img/cinepolis.jpg">
-                  <h5 class="card-title">Cinepolis</h5>
-                  <br>
-                  <a href="https://www.facebook.com/Cin%C3%A9polis-Temixco-Plaza-Solaz-103800454778630" target="_blank"> 
-                    <span style="width:40px; height:40px;" class="text-white border border-primary rounded-circle bg-primary" data-feather="facebook">
-                  </span> 
-                </a>
-                <a href="https://www.facebook.com/Cin%C3%A9polis-Temixco-Plaza-Solaz-103800454778630" target="_blank"> 
-                  <span style="width:40px; height:40px;" class="text-white border border-danger rounded-circle bg-danger" data-feather="youtube">
-                </span> 
-              </a>
+            <div class="card text-center">
+                <div class="card-header">
+                    Acerca de nosotros
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                  <img style="height: 168px; width: 169px; class="img-fluid img-thumbnail" src="./assets/img/carlsjr.jpeg">
-                  <h5 class="card-title">Carls Jr</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Nuestras tiendas</h5>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <h6 class="card-title">Cinepolis</h6>
+                            <img style="height: 250px;width: 200px;" class="img-thumbnail"
+                                src="./assets/img/cinepolis.jpg" />
+                            <br>
+                            <!--Salto de línea-->
+                            <a target="_blank"
+                                href="https://www.facebook.com/Cin%C3%A9polis-Temixco-Plaza-Solaz-103800454778630">
+                                <i style="width: 30px; height: 30px;" class="text-white bg-primary rounded-circle"
+                                    data-feather="facebook"></i>
+                            </a>
+                            <a style="margin: 10px" target="_blank" href="https://www.youtube.com/user/CinepolisOnline">
+                                <i style="width: 30px; height: 30px;" class="text-white bg-danger rounded "
+                                    data-feather="youtube"></i>
+                            </a>
+
+                            <!--Un extra contenido-->
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <h6 class="card-title">Carls JR</h6>
+                            <img style="height: 250px;width: 200px;" class="img-thumbnail"
+                                src="./assets/img/carlsjr.jpeg" />
+                            <br>
+                            <a target="_blank" href="https://www.facebook.com/Carls-Jr-Temixco-856482737843393">
+                                <i style="width: 30px; height: 30px;" class="text-white bg-primary rounded-circle"
+                                    data-feather="facebook"></i>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <h6 class="card-title">Sushi Roll</h6>
+                            <img style=" height: 250px;width: 200px;" class="img-thumbnail"
+                                src="./assets/img/sushi.jpg" />
+                            <br>
+                            <a style="margin: 10px" target="_blank" href="https://www.facebook.com/sushirollmexico">
+                                <i style="width: 30px; height: 30px;" class="text-white bg-primary rounded-circle"
+                                    data-feather="facebook"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                  <img style="height: 168px; width: 169px; class="img-fluid img-thumbnail" src="./assets/img/sushi.jpg">
-                  <h5 class="card-title">Sushi</h5>
+                <div class="card-footer text-muted">
+                    ¡Ven y conocenos!
                 </div>
-              </div>
-              <p class="card-text">¿Traes antojo? ¡Ven a consentirte!</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="card-footer text-muted">
-              ¡Ven y Conocenos!
-            </div>
-          </div>
-            
+
+
+
+            <!--Es para e
+                tiquetar un objeto-->
             <figure>
-                <img src="./assets/img/cinepolis.jpg" alt="CINEPOLIS PLAZA SOLAZ-TEMIXCO">
+                <img alt="CINEPOLIS PLAZA SOLAZ-TEMIXCO-CINE" src="./assets/img/cinepolis.jpg">
             </figure>
         </article>
     </section>
-    <hr />
+    <hr>
     <section id="contact">
-        <h2>Contacto</h2>
+        <h2>Contácto</h2>
         <article>
-            <form action="">
-                <label>Nombre Completo</label>
-                <input placeholder="Max Mendoza" id="nombre" type="text">
-                <label>Correo electrónico</label>
-                <input placeholder="correo@correo.com" type="email" id="email">
-                <label>Comentarios</label>
-                <textarea style="resize: none;" placeholder="Dudas o comentarios" id="commentary" cols="30" rows="3">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre completo:</label>
+                    <input type="text" class="form-control" id="name" >
+                  </div>
+                <!--Formulario-->
+                <label for="name">Nombre completo:</label>
+                <input placeholder="Erick Mireles" id="name" type="text" />
+                <label>Correo electrónico:</label>
+                <input placeholder="plaza@plazasolaz.com" id="email" type="email" />
+                <label>Comentarios:</label>
+                <textarea style="resize: none;" placeholder="Dudas o comentarios" rows="4" id="commentary">
 
-                        </textarea>
-                <label style="font: 20px;"> Nombre de alumno:* <i style="font-size: 20px;"> </i></label>
+                </textarea>
+                <label style="font-size: 20px;">
+                    Nombre de alumno:
+                    <i style="color: red;">
+                        *</i>
+                </label>
                 <select>
-                    <option value=""> Seleccione </option>
-                    <option value="1"> Max Mendoza </option>
-                    <option value="2"> Kemish Alejandro </option>
-                    <option value="3"> Arechungus </option>
+                    <option value="">Seleccione</option>
+                    <option value="1">Erick Mireles</option>
+                    <option value="2">Angel</option>
+                    <option value="3">Emiliano</option>
+                    <option value="4">Jacque</option>
                 </select>
             </form>
         </article>
-    </section>
-    <hr />
-    <section>
         <article>
-            <h2>Aqui estamos</h2>
-
+            <h2>¡Aquí estamos!</h2>
+            <hr>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.123380144231!2d-99.22341240000006!3d18.83718110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd8e62b807199%3A0xab4ce0e369bfe16f!2sCinepolis%20Plaza%20SOLAZ!5e0!3m2!1ses!2smx!4v1621370879346!5m2!1ses!2smx"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.1304152986945!2d-99.223801!3d18.836868199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd9cedb104e7f%3A0xfeb61d7c4c4c4363!2sPlaza%20Solaz!5e0!3m2!1ses-419!2smx!4v1621370351898!5m2!1ses-419!2smx"
                 width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </article>
     </section>
@@ -151,50 +199,24 @@
 
     </aside>
     <footer>
-        <p>Plaza Solaz 7779561345</p>
+        <p>Plaza Solaz 77756899456</p>
     </footer>
 
-    <!--javascript-->
+    <h2>Hola</h2>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
     <script>
-      feather.replace()
+        feather.replace()
     </script>
-
-
-
-
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script data-search-pseudo-elements defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 
 </body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
