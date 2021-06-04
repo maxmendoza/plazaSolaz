@@ -108,12 +108,15 @@
                             <!--Salto de línea-->
                             <a target="_blank"
                                 href="https://www.facebook.com/Cin%C3%A9polis-Temixco-Plaza-Solaz-103800454778630">
-                                <i style="width: 30px; height: 30px;" class="text-white bg-primary rounded-circle"
+                                <i style="width: 40px; height: 40px;" class="text-white bg-primary rounded-circle"
                                     data-feather="facebook"></i>
                             </a>
-                            <a style="margin: 10px" target="_blank" href="https://www.youtube.com/user/CinepolisOnline">
-                                <i style="width: 30px; height: 30px;" class="text-white bg-danger rounded "
-                                    data-feather="youtube"></i>
+                            <a target="_blank" href="https://www.youtube.com/user/CinepolisOnline">
+                                <i style="width: 40px; height: 40px;" class="text-white bg-danger rounded" data-feather="youtube"></i>
+                            </a>
+                            <br>
+                            <a target="_blank" href="https://www.facebook.com/sushirollmexico">
+                                <i style="width: 40px; height: 40px; margin: ;" class="text-white rounded-circle fab fa-whatsapp-square fa-2x text-success">  </i>
                             </a>
 
                             <!--Un extra contenido-->
@@ -124,8 +127,16 @@
                                 src="./assets/img/carlsjr.jpeg" />
                             <br>
                             <a target="_blank" href="https://www.facebook.com/Carls-Jr-Temixco-856482737843393">
-                                <i style="width: 30px; height: 30px;" class="text-white bg-primary rounded-circle"
+                                <i style="width: 40px; height: 40px;" class="text-white bg-primary rounded-circle"
                                     data-feather="facebook"></i>
+                            </a>
+                            <a target="_blank" href="https://www.youtube.com/user/CinepolisOnline">
+                                <i style="width: 40px; height: 40px;" class="text-white bg-danger rounded "
+                                    data-feather="youtube"></i>
+                            </a>
+                            <br>
+                            <a target="_blank" href="https://www.facebook.com/sushirollmexico">
+                                <i style="width: 40px; height: 40px; margin: ;" class="text-white rounded-circle fab fa-whatsapp-square fa-2x text-success">  </i>
                             </a>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4">
@@ -133,9 +144,17 @@
                             <img style=" height: 250px;width: 200px;" class="img-thumbnail"
                                 src="./assets/img/sushi.jpg" />
                             <br>
-                            <a style="margin: 10px" target="_blank" href="https://www.facebook.com/sushirollmexico">
-                                <i style="width: 30px; height: 30px;" class="text-white bg-primary rounded-circle"
-                                    data-feather="facebook"></i>
+                            <a target="_blank" href="https://www.facebook.com/sushirollmexico">
+                                <i style="width: 40px; height: 40px;" class="text-white bg-primary rounded-circle"
+                                    data-feather="facebook">  </i>
+                            </a>
+                            <a target="_blank" href="https://www.youtube.com/user/CinepolisOnline">
+                                <i style="width: 40px; height: 40px;" class="text-white bg-danger rounded "
+                                    data-feather="youtube"></i>
+                            </a>
+                            <br>
+                            <a target="_blank" href="https://www.facebook.com/sushirollmexico">
+                                <i style="width: 40px; height: 40px;" class="text-white rounded-circle fab fa-whatsapp-square fa-2x text-success">  </i>
                             </a>
                         </div>
                     </div>
@@ -149,9 +168,6 @@
 
             <!--Es para e
                 tiquetar un objeto-->
-            <figure>
-                <img alt="CINEPOLIS PLAZA SOLAZ-TEMIXCO-CINE" src="./assets/img/cinepolis.jpg">
-            </figure>
         </article>
     </section>
     <hr>
@@ -159,31 +175,30 @@
         <h2>Contácto</h2>
         <article>
             <form>
-                <div class="form-group">
-                    <label for="name">Nombre completo:</label>
-                    <input type="text" class="form-control" id="name" >
+                <div class="row">
+                    <div class="col-3 col-sm-3 col-xl-3">
+                      <input type="text" class="form-control" placeholder="NOMBRE(S)" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="APELLIDOS" aria-label="Last name">
+                    </div>
                   </div>
-                <!--Formulario-->
-                <label for="name">Nombre completo:</label>
-                <input placeholder="Erick Mireles" id="name" type="text" />
-                <label>Correo electrónico:</label>
-                <input placeholder="plaza@plazasolaz.com" id="email" type="email" />
-                <label>Comentarios:</label>
-                <textarea style="resize: none;" placeholder="Dudas o comentarios" rows="4" id="commentary">
-
-                </textarea>
-                <label style="font-size: 20px;">
-                    Nombre de alumno:
-                    <i style="color: red;">
-                        *</i>
-                </label>
-                <select>
-                    <option value="">Seleccione</option>
-                    <option value="1">Erick Mireles</option>
-                    <option value="2">Angel</option>
-                    <option value="3">Emiliano</option>
-                    <option value="4">Jacque</option>
-                </select>
+                  <br>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CORREO ELECTRONICO">
+                    <div id="emailHelp" class="form-text">No compartiremos tu direccion de correo electronico con nadie mas!</div>
+                </div>
+                <br>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label"></label>
+                    <input type="text" class="form-control text-uppercase" id="inputAddress" placeholder="Direccion del contacto">
+                  </div>
+                  <br>
+                  <div class="col">
+                    <input type="tel" class="form-control" placeholder="NUMERO TELEFONICO" aria-label="Last name">
+                  </div>
+        
             </form>
         </article>
         <article>
