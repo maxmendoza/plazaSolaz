@@ -11,45 +11,46 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"> <img src="/assets/img/solaz.png" width="50" height="50"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Desplegable
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./screen/learnDiv.html">Aprende DIV</a></li>
-                            <li><a class="dropdown-item" href="./screen/learnBootstrap.html">Aprende Bootstrap</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Chupapi Munyayo</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="dropdown-item" href="#">Max Mendoza Luna</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#home"><img class="img-fluid bg-transparent" width="50" height="50"
+                src="../assets/img/solaz.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html#home">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./learnDiv.html">Aprende Div</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./learnBootstrap.html">Aprende Bootstrap</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./pokemon.html">Pokemon</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav">
+                <li>
+                    <img class="border border-danger rounded-circle" height="40" width="40" data-feather="meh">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info">Max Mendoza Luna</a>
+                </li>
+            </ul>
+
         </div>
     </nav>
 
@@ -87,7 +88,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
-
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace()
+        </script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="./js/angular.min.js">  </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+        <script data-search-pseudo-elements defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    
 
 
 
