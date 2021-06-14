@@ -26,3 +26,8 @@ color: green;
 .text-info{
     color: cyan;
 }
+
+
+.izquierda {
+    float: left;
+}

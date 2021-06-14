@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body class="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#home"><img class="img-fluid bg-transparent" width="50" height="50"
+                src="../assets/img/solaz.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./screen/learnDiv.html">Aprende Div</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./screen/learnBootstrap.html">Aprende Bootstrap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./screen/pokemon.html">Pokemon</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav">
+                <li>
+                    <img class="border border-danger rounded-circle" height="40" width="40" data-feather="meh">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info">Max Mendoza Luna</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="row" style="padding: 100px;">
+        <div class="col-6">
+            <section>
+                <article>
+
+                    <div class="container">
+                        <div>
+                            <h1>Suma</h1>
+                        </div>
+                        <div class=" row">
+                            <div col-12>
+                                <form method="POST" action="" role="form">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="">Numero 1:</label>
+                                                <input type="number" id="numS1" name="numS1">
+
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="">Numero 2</label>
+                                                <input type="number" id="numS2" name="numS2">
+
+                                            </div>
+                                            <div class="col-6">
+                                                <br>
+
+                                                <button type="button" class="btn btn-outline-success"
+                                                    onclick="suma()">Sumar</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="col-6">
+            <section>
+                <article>
+
+                    <div class="container">
+                        <div>
+                            <h1>Resta</h1>
+                        </div>
+                        <div class=" row">
+                            <div col-12>
+                                <form method="POST" action="" role="form">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="">Numero 1:</label>
+                                                <input type="number" id="numR1" name="numR1">
+
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="">Numero 2</label>
+                                                <input type="number" id="numR2" name="numR2">
+
+                                            </div>
+                                            <div class="col-6">
+                                                <br>
+
+                                                <button type="button" class="btn btn-outline-success"
+                                                    onclick="resta()">Restar</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+    </div>
+    <br>
+    <div class="row" style="padding: 100px;">
+        <div class="col-6">
+            <section>
+                <article>
+
+                    <div class="container">
+                        <div>
+                            <h1>Multiplicacion</h1>
+                        </div>
+                        <div class=" row">
+                            <div col-12>
+                                <form method="POST" action="" role="form">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="">Numero 1:</label>
+                                                <input type="number" id="numM1" name="numM1">
+
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="">Numero 2</label>
+                                                <input type="number" id="numM2" name="numM2">
+
+                                            </div>
+                                            <div class="col-6">
+                                                <br>
+
+                                                <button type="button" class="btn btn-outline-success"
+                                                    onclick="multipli()">Multiplicar</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="col-6">
+            <section>
+                <article>
+
+                    <div class="container">
+                        <div class="">
+                            <h1>Division</h1>
+                        </div>
+                        <div class=" row">
+                            <div col-12>
+                                <form method="POST" action="" role="form">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="">Numero 1:</label>
+                                                <input type="number" id="numD1" name="numD1">
+
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="">Numero 2</label>
+                                                <input type="number" id="numD2" name="numD2">
+
+                                            </div>
+                                            <div class="col-6">
+                                                <br>
+
+                                                <button type="button" class="btn btn-outline-success"
+                                                    onclick="division()">Dividir</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+    </div>
+    <script src="../js/calculadora.js"></script>
+</body>
+<aside>
+
+</aside>
+<footer>
+
+</footer>
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace()
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="./js/angular.min.js">  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+<script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+    crossorigin="anonymous"></script>
+
+
+</html>
